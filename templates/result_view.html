@@ -1,12 +1,13 @@
 <h1>These are your images</h1>
 <div class="wrapper">
+    {% load static %}
     <div class="source">
-        <img src="{{ image_source }}"/>
+        <img src="{% static image_source %}"/>
     </div>
     <div class="png">
-        <img src="{{ image_png }}"/>
+        <img src="{% static image_png %}"/>
     </div>
     <div class="jpeg">
-        <img src="{{ image_jpeg }}"/>
+        <img src="{% static image_jpeg %}"/>
     </div>
 </div>

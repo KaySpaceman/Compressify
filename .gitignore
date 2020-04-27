@@ -142,4 +142,4 @@ cython_debug/
 
 #JetBrains stuff
 .idea
-files/
+static/
