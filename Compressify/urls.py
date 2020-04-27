@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from Compressor.views import home_view, result_view
+
 urlpatterns = [
+    path('', home_view, name='home'),
+    path('result_view', result_view, name='results'),
     path('admin/', admin.site.urls),
 ]
